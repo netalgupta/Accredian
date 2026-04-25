@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | 🌐 **Live Demo** | [https://accredian-topaz.vercel.app/](#) |
-| 📁 **GitHub Repo** | [github.com/netalgupta/accredian-enterprise](#) |
+| 📁 **GitHub Repo** | [https://github.com/netalgupta/Accredian](#) |
 
 ---
 
@@ -157,7 +157,7 @@ accredian-enterprise/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/accredian-enterprise.git
+git clone https://github.com/netalgupta/Accredian
 cd accredian-enterprise
 
 # 2. Install dependencies
@@ -264,12 +264,13 @@ Lighthouse scores on deployed build:
 
 | Metric | Score |
 |---|---|
-| Performance | 94 |
-| Accessibility | 97 |
-| Best Practices | 95 |
+| Performance | 75 |
+| Accessibility | 93 |
+| Best Practices | 100 |
 | SEO | 100 |
 
-<!-- Add Lighthouse screenshot here -->
+<img width="1205" height="465" alt="image" src="https://github.com/user-attachments/assets/fa1057bd-5db5-4ee1-99c3-a79e24306928" />
+
 
 ---
 
