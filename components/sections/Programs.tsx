@@ -5,8 +5,10 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import { programs } from "@/lib/data";
 import { Badge } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { ProgramModal } from "@/components/ui/ProgramModal";
 import { Clock, BarChart2, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { Program } from "@/types";
 
 type Category = "All" | "Tech" | "Business" | "Leadership";
 const TABS: Category[] = ["All", "Tech", "Business", "Leadership"];
@@ -15,8 +17,24 @@ export default function Programs() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.1 });
   const [active, setActive] = useState<Category>("All");
+  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filtered = active === "All" ? programs : programs.filter((p) => p.category === active);
+
+  const handleKnowMore = (program: Program) => {
+    setSelectedProgram(program);
+    setIsModalOpen(true);
+  };
+
+  const handleRequestBrochure = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      const offset = 80;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
 
   return (
     <section
@@ -122,6 +140,7 @@ export default function Programs() {
                 <Button
                   variant="outline"
                   size="sm"
+                  onClick={() => handleKnowMore(prog)}
                   className="w-full group-hover:bg-brand-500 group-hover:text-white group-hover:border-brand-500 transition-all duration-200"
                   aria-label={`Know more about ${prog.title}`}
                 >
@@ -132,6 +151,14 @@ export default function Programs() {
           </AnimatePresence>
         </motion.div>
       </div>
+
+      {/* Program Modal */}
+      <ProgramModal
+        program={selectedProgram}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onRequestBrochure={handleRequestBrochure}
+      />
     </section>
   );
 }

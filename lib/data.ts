@@ -10,6 +10,10 @@ export const programs: Program[] = [
     description: "Master React, Node.js, databases, and cloud deployment with real-world projects.",
     icon: "💻",
     color: "from-blue-500 to-cyan-500",
+    fullDescription: "This comprehensive bootcamp transforms your engineering team into modern full-stack developers. Participants will master React for dynamic frontends, Node.js for scalable backends, work with PostgreSQL and MongoDB, and deploy to AWS and GCP. Real-world projects include building an e-commerce platform, SaaS application, and mobile-friendly web apps. Live mentorship from senior engineers at Razorpay, Amazon, and Google ensures learners get industry best practices.\n\nThe program includes hands-on pair programming sessions, code review workshops, and DevOps training. By the end, your team will be confident deploying production-grade applications and implementing CI/CD pipelines.",
+    mentorsCount: 12,
+    projects: 4,
+    modules: ["Frontend Fundamentals", "Backend Architecture", "Database Design", "Cloud Deployment", "DevOps & CI/CD", "System Design Patterns"],
   },
   {
     id: "p2",
@@ -20,6 +24,10 @@ export const programs: Program[] = [
     description: "From ML fundamentals to production LLM deployment — built for engineering teams.",
     icon: "🤖",
     color: "from-violet-500 to-purple-500",
+    fullDescription: "Empower your engineering teams to build AI-powered features. This program covers Python for ML, TensorFlow and PyTorch, NLP with transformers, and production deployment of LLMs. Learners work on real-world problems like sentiment analysis, recommendation systems, and LLM chatbot integration. Expert mentors from DeepMind, OpenAI, and Indian AI labs guide the curriculum.\n\nIncluded are workshops on prompt engineering, fine-tuning models, vector databases, and building scalable ML pipelines. Teams will deploy their own LLM-powered applications and learn to monitor model performance in production.",
+    mentorsCount: 10,
+    projects: 3,
+    modules: ["Python & ML Fundamentals", "Deep Learning", "NLP & Transformers", "LLM APIs", "Production ML", "Model Monitoring"],
   },
   {
     id: "p3",
@@ -30,6 +38,10 @@ export const programs: Program[] = [
     description: "Build, launch, and scale products with agile frameworks and data-driven decisions.",
     icon: "📊",
     color: "from-orange-500 to-rose-500",
+    fullDescription: "Transform your product managers into strategic leaders who drive business impact. This program covers product strategy, market research, user research methodologies, roadmap planning, and agile execution. Participants learn to build data dashboards, run A/B tests, and make decisions backed by metrics. Mentors from Swiggy, Flipkart, and ZomaitoTo guide through real case studies.\n\nPractical workshops include building PRDs, running user interviews, analyzing competitive landscapes, and defining product metrics. Graduates will have frameworks for prioritization, launch strategies, and scaling products in competitive markets.",
+    mentorsCount: 8,
+    projects: 3,
+    modules: ["Product Strategy", "User Research", "Roadmapping", "Analytics & Metrics", "Agile Execution", "Go-to-Market"],
   },
   {
     id: "p4",
@@ -40,6 +52,10 @@ export const programs: Program[] = [
     description: "Empower your finance teams with forecasting, FP&A, and business intelligence.",
     icon: "📈",
     color: "from-green-500 to-emerald-500",
+    fullDescription: "Build world-class finance and analytics capabilities. This program teaches FP&A fundamentals, financial modeling, cash flow forecasting, and strategic business planning. Learners master Excel, Tableau, and Power BI for data visualization. Real-world case studies include startup fundraising, profitability analysis, and growth projections. Mentors from Sequoia Capital, McKinsey, and Bain bring investment and consulting perspectives.\n\nWorkshops cover scenario planning, building financial dashboards, variance analysis, and communicating insights to leadership. Teams will build comprehensive financial models and present strategic recommendations.",
+    mentorsCount: 9,
+    projects: 3,
+    modules: ["Financial Fundamentals", "FP&A Modeling", "Data Analytics", "Business Intelligence", "Strategic Planning", "Investor Communications"],
   },
   {
     id: "p5",
@@ -50,6 +66,10 @@ export const programs: Program[] = [
     description: "Develop transformational leaders with executive coaching and strategic thinking.",
     icon: "🏆",
     color: "from-amber-500 to-yellow-500",
+    fullDescription: "Accelerate your high-potential managers into executive leaders. This program focuses on strategic thinking, organizational impact, stakeholder management, and navigating complex decisions. Participants receive 1-on-1 executive coaching, peer mentoring circles, and learn from C-suite leaders across industries. The curriculum includes change management, building high-performing teams, and communicating vision.\n\nExperience real-world leadership challenges through simulations and case study discussions. Build a 90-day transformation plan and executive presence. Graduates emerge as strategic partners ready for senior leadership roles.",
+    mentorsCount: 7,
+    projects: 2,
+    modules: ["Strategic Thinking", "Executive Presence", "Change Management", "Team Building", "Stakeholder Management", "Decision Making"],
   },
   {
     id: "p6",
@@ -60,6 +80,10 @@ export const programs: Program[] = [
     description: "Build high-performing teams, foster innovation, and drive organizational change.",
     icon: "🌟",
     color: "from-pink-500 to-rose-500",
+    fullDescription: "Enable your HR and people teams to drive culture and performance. This program covers talent acquisition strategies, employee engagement, performance management, and building inclusive workplaces. Learners explore psychological safety, diversity initiatives, and retention strategies. Mentors from Paytm, Gojek, and top startups share real culture-building journeys.\n\nPractical modules include designing compensation strategies, conducting effective one-on-ones, handling difficult conversations, and building employee development programs. Your people teams will return with concrete frameworks to impact organizational culture and performance.",
+    mentorsCount: 8,
+    projects: 2,
+    modules: ["Talent Strategy", "Culture Building", "Performance Management", "Employee Engagement", "Compensation", "D&I Leadership"],
   },
 ];
 

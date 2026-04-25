@@ -9,6 +9,11 @@
     --font-inter: 'Inter', system-ui, sans-serif;
     --font-sora: 'Sora', system-ui, sans-serif;
     scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  :root.light {
+    color-scheme: light;
   }
 
   * {
@@ -21,8 +26,13 @@
   }
 
   body {
-    @apply bg-slate-950 text-white font-sans antialiased;
+    @apply bg-slate-950 dark:bg-slate-950 text-white dark:text-white font-sans antialiased transition-colors duration-300;
     background-color: #020817;
+  }
+
+  .light body {
+    @apply bg-white text-slate-900;
+    background-color: #ffffff;
   }
 
   ::selection {

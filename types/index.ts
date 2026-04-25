@@ -7,6 +7,10 @@ export interface Program {
   description: string;
   icon: string;
   color: string;
+  fullDescription?: string;
+  mentorsCount?: number;
+  projects?: number;
+  modules?: string[];
 }
 
 export interface Testimonial {

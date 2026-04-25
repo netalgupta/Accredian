@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
@@ -15,15 +16,17 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dark, setDark] = useState(true);
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    // Initialize dark mode
-    document.documentElement.classList.add("dark");
+    setMounted(true);
+  }, []);
 
+  useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -42,13 +45,9 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  const toggleDark = useCallback(() => {
-    setDark((d) => {
-      const next = !d;
-      document.documentElement.classList.toggle("dark", next);
-      return next;
-    });
-  }, []);
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   const scrollTo = (href: string) => {
     const id = href.replace("#", "");
@@ -110,13 +109,15 @@ export default function Navbar() {
 
             {/* Right Actions */}
             <div className="flex items-center gap-3">
-              <button
-                onClick={toggleDark}
-                aria-label="Toggle dark mode"
-                className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-200"
-              >
-                {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
+              {mounted && (
+                <button
+                  onClick={toggleTheme}
+                  aria-label="Toggle dark mode"
+                  className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-200"
+                >
+                  {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                </button>
+              )}
 
               <Button
                 variant="primary"

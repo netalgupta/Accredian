@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { ThemeProvider } from "next-themes";
+import { ScrollProgressBar } from "@/components/ui/ScrollProgressBar";
+import { BackToTopButton } from "@/components/ui/BackToTopButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,7 +16,7 @@ const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
   display: "swap",
-  weight: ["400", "600", "700", "800", "900"],
+  weight: ["400", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -56,27 +59,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#020817" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.variable} ${sora.variable} font-sans bg-slate-950 text-white antialiased`}>
-        {children}
-        <Toaster
-          position="top-right"
-          theme="dark"
-          richColors
-          closeButton
-          toastOptions={{
-            style: {
-              background: "rgba(15, 23, 42, 0.95)",
-              border: "1px solid rgba(255,255,255,0.1)",
-              color: "#fff",
-              backdropFilter: "blur(12px)",
-            },
-          }}
-        />
+      <body className={`${inter.variable} ${sora.variable} font-sans bg-slate-950 dark:bg-slate-950 text-white dark:text-white antialiased transition-colors duration-300`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <ScrollProgressBar />
+          <BackToTopButton />
+          {children}
+          <Toaster
+            position="top-right"
+            theme="dark"
+            richColors
+            closeButton
+            toastOptions={{
+              style: {
+                background: "rgba(15, 23, 42, 0.95)",
+                border: "1px solid rgba(255,255,255,0.1)",
+                color: "#fff",
+                backdropFilter: "blur(12px)",
+              },
+            }}
+          />
+        </ThemeProvider>
       </body>
     </html>
   );
