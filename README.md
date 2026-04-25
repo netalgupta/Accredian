@@ -280,7 +280,7 @@ Lighthouse scores on deployed build:
 ## 👤 Author
 
 **Netal Gupta**
-- GitHub: [netalgupta](https://github.com/netlgupta)
+- GitHub: [netalgupta](https://github.com/netalgupta)
 - LinkedIn: [linkedin.com/in/netalgupta](#)
 - Email: netal.gupta@somaiya.edu
 
