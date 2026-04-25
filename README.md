@@ -8,8 +8,8 @@
 
 | | |
 |---|---|
-| 🌐 **Live Demo** | [your-project.vercel.app](#) |
-| 📁 **GitHub Repo** | [github.com/yourusername/accredian-enterprise](#) |
+| 🌐 **Live Demo** | [https://accredian-topaz.vercel.app/](#) |
+| 📁 **GitHub Repo** | [github.com/netalgupta/accredian-enterprise](#) |
 
 ---
 
