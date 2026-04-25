@@ -16,28 +16,32 @@
 ## 📸 Screenshots
 
 > _Hero Section_
-<!-- Add screenshot here -->
+<img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/603b3b65-8e0f-413f-84c6-703bfb438af9" />
+
 
 > _Programs Section with Filter_
-<!-- Add screenshot here -->
+<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/ff87836a-76fe-4f5d-b9ab-84237dbfab59" />
+
+
+> _Program Example_
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/b19856ac-8f2e-49c1-bea7-3e3f8851933e" />
+
 
 > _How It Works_
-<!-- Add screenshot here -->
+<img width="1919" height="859" alt="image" src="https://github.com/user-attachments/assets/bcbb9041-aeef-4062-96b8-c8ae20ca938c" />
+
 
 > _Testimonials Carousel_
-<!-- Add screenshot here -->
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/8638d769-8e13-4b9f-94b3-2ddf91a17080" />
+
 
 > _Lead Capture Form_
-<!-- Add screenshot here -->
+<img width="1918" height="853" alt="image" src="https://github.com/user-attachments/assets/f25ab9ac-03cc-4921-a89e-406e9bfab622" />
 
-> _Admin Dashboard_
-<!-- Add screenshot here -->
-
-> _Light Mode_
-<!-- Add screenshot here -->
 
 > _Mobile View_
-<!-- Add screenshot here -->
+<img width="237" height="528" alt="image" src="https://github.com/user-attachments/assets/6789bb9c-2465-48df-b4d0-dbf00ef26f50" />
+
 
 ---
 
